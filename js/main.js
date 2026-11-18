@@ -1,59 +1,37 @@
-/* NSCA Sweden – navigation that never changes the page URL.
-   - href="#section-id" links scroll smoothly to the section (no #hash added).
-   - data-page="name" links switch to <div class="page" data-page="name"> (no URL change).
-   - href="#" placeholders do nothing. */
-(function () {
-  var nav = document.getElementById('nav');
-  var burger = document.getElementById('burger');
-  var pages = document.querySelectorAll('.page');
+(() => {
+  const nav = document.getElementById("primaryNav");
+  const toggle = document.getElementById("navToggle");
+  const form = document.getElementById("contactForm");
 
-  function closeMenu() {
-    if (!nav || !burger) return;
-    nav.classList.remove('open');
-    burger.setAttribute('aria-expanded', 'false');
-  }
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
 
-  function showPage(name) {
-    var target = null;
-    pages.forEach(function (p) { if (p.dataset.page === name) target = p; });
-    if (!target) return false;
-    pages.forEach(function (p) { p.hidden = p !== target; });
-    return true;
-  }
-
-  if (burger) {
-    burger.addEventListener('click', function () {
-      var open = nav.classList.toggle('open');
-      burger.setAttribute('aria-expanded', open);
+    nav.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
     });
   }
 
-  document.addEventListener('click', function (e) {
-    var a = e.target.closest('a');
-    if (!a) return;
-    var href = a.getAttribute('href') || '';
+  if (form) {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const button = form.querySelector('button[type="submit"]');
+      if (!button) return;
 
-    // Switch page (URL stays the same)
-    if (a.dataset.page) {
-      e.preventDefault();
-      showPage(a.dataset.page);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      closeMenu();
-      return;
-    }
+      const original = button.innerHTML;
+      button.disabled = true;
+      button.innerHTML = "Message ready ✓";
 
-    // In-page anchors and "#" placeholders (URL stays the same)
-    if (href.charAt(0) === '#') {
-      e.preventDefault();
-      if (href.length > 1) {
-        var target = document.querySelector(href);
-        if (target) {
-          var host = target.closest('.page');
-          if (host && host.hidden) showPage(host.dataset.page);
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-      closeMenu();
-    }
-  });
+      window.setTimeout(() => {
+        button.disabled = false;
+        button.innerHTML = original;
+        form.reset();
+      }, 1600);
+    });
+  }
 })();
