@@ -1,1 +1,519 @@
 
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1360px) {
+  .nav-primary {
+    gap: 18px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+  
+}
+
+@media (max-width: 1200px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+  }
+
+  .hero-media {
+    width: 100%;
+    height: 420px;
+  }
+
+  .audience-grid,
+  .involve-grid,
+  .resources-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .board-card h3 {
+    font-size: 21px;
+}
+  .board-card p {
+    font-size: 16px;
+}
+
+  .story-main,
+  .news-layout,
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+   .story-photo img {
+      aspect-ratio: 454/574;
+  }
+  .pillar-card {
+      padding: 32px 20px 30px;
+  }
+  .story-copy h2, .board h2 {
+      font-size: 42px;
+      line-height: 52px;
+  }
+  .story-main{
+      grid-template-columns: 1fr 1.5fr;
+  }
+  .story-photo {
+      width: 100%;
+      max-width: 454px;
+  }
+  .lang-switch .inactive, .lang-switch .active, .nav-links a {
+      font-size: 14px;
+  }
+  .lang-switch .sep {
+      font-size: 12px;
+  }
+  .hero-title {
+      max-width: 100%;
+  }
+  .pillars h2, .involve h2, .news h2, .contact-copy h2 {
+      font-size: 52px;
+      line-height: 58.32px;
+  }
+  .pillar-card h3 {
+      font-size: 25px;
+  }
+  .pillar-card p {
+      font-size: 20px;
+      line-height: 27.8px;
+  }
+  .pillar-card .icon {
+      width: 54px;
+      height: 54px;
+  }
+  .contact-copy {
+      max-width: 100%;
+  }
+  .contact-copy .intro {
+      max-width: 640px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-links, .nav-actions .lang-switch, .btn-join {
+    display: none;
+  }
+  .nav-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+  .nav-primary {
+      justify-content: space-between;
+  }
+  .nav-primary.is-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 24px;
+    padding: 20px 24px;
+    box-shadow: 0 12px 28px rgba(0, 10, 40, 0.16);
+    z-index: 30;
+  }
+}
+
+@media (max-width: 991px) { 
+
+  .nav-primary {
+    padding-right: 16px;
+  }
+
+  .nav-logo {
+    width: 170px;
+    height: 66px;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  .nav-actions .lang-switch,
+  .btn-join {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: clamp(2.6rem, 5vw, 3.2rem);
+    line-height: 1.15;
+  }
+
+  .section-title,
+  .audience-title,
+  .board h2,
+  .involve h2,
+  .news h2,
+  .resources h2,
+  .pillars h2,
+  .contact-copy h2,
+  .story-copy h2 {
+    font-size: clamp(2.6rem, 4vw, 2.8rem);
+    line-height: 1.15;
+    letter-spacing: -1.2px;
+  }
+
+  .disease-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-featured-media {
+    height: 360px;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-lead {
+      font-size: 20px;
+      line-height: 32px;
+  }
+  .story-main, .pillars-grid {
+      grid-template-columns: 1fr;
+  }
+  .story-copy h2, .story-quote p  {
+      max-width: 100%;
+  }
+  .board-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .pillar-card {
+      min-height: auto;
+  }
+  .news-featured-body p, .news-side-card p {
+      font-size: 20px;
+      line-height: 28px;
+  }
+  .news-side-card .thumb {
+      width: 140px;
+      height: auto;
+  }
+  .voices-grid {
+      grid-template-columns: 1fr;
+  }
+  .voice-card p {
+    flex: inherit;
+  }
+  .voice-card {
+      min-height: auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .container-nsca {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .nav-primary {
+    border-radius: 28px;
+    padding: 8px 14px 8px 18px;
+    gap: 12px;
+  }
+
+  .nav-logo {
+    width: 142px;
+    height: 54px;
+  }
+
+  .nav-actions .lang-switch {
+    display: none;
+  }
+
+  .btn-join {
+    display: none;
+  }
+
+  .hero-inner {
+    min-height: auto;
+    padding-top: 22px;
+    padding-bottom: 40px;
+  }
+
+  .hero-content {
+    margin-top: 40px;
+    gap: 24px;
+  }
+
+  .hero-eyebrow {
+    font-size: 14px;
+    letter-spacing: 1.9px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 9vw, 3rem);
+  }
+
+  .hero-lead {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .hero-media {
+    height: 320px;
+    border-radius: 24px;
+  }
+
+  .audience-grid,
+  .board-grid,
+  .involve-grid,
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blood-banner {
+    padding: 36px 24px;
+  }
+
+  .blood-banner-top {
+    align-items: flex-start;
+  }
+
+  .blood-banner h3 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .blood-banner-copy,
+  .story-quote p,
+  .voice-card p,
+  .contact-copy .intro,
+  .contact-copy .details {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .story-main {
+    gap: 24px;
+  }
+
+  .story-photo {
+    height: 360px;
+  }
+
+  .story-byline {
+    gap: 8px;
+  }
+
+  .news-side-card {
+    flex-direction: column;
+  }
+
+  .news-side-card .thumb {
+    width: 100%;
+    height: 200px;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    gap: 28px;
+  }
+
+  .hero-title br,
+  .hero-lead br,
+  .blood-banner h3 br,
+  .story-copy h2 br,
+  .involve h2 br,
+  .contact-copy h2 br {
+    display: none;
+  }
+
+  .footer-partners,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .partners-label {
+      width: 100%;
+  }
+  .partner-badge {
+    width: auto;
+    justify-content: center;
+  }
+  .story-byline span {
+      font-size: 18px;
+  }
+  .disease-links {
+      gap: 8px;
+      justify-content: center;
+  }
+  .audience-lead {
+      font-size: 20px;
+  }
+  .audience-card {
+      min-height: auto;
+  }
+  .hero-ctas {
+      gap: 10px;
+  }
+  .btn-yellow,
+  .btn-outline-light,
+  .btn-navy,
+  .btn-outline-navy,
+  .btn-pill-navy,
+  .btn-pill-red,
+  .btn-rsvp {
+    height: 50px;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .section-title, .audience-title, .board h2, .involve h2, .news h2, .resources h2, .pillars h2, .contact-copy h2, .story-copy h2 {
+      font-size: clamp(2.2rem, 4vw, 2.8rem);
+  }
+  
+}
+
+@media (max-width: 560px) {
+  .hero-note {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .audience-card,
+  .disease-card,
+  .resource-card,
+  .involve-card,
+  .news-side-card,
+  .news-featured,
+  /* .board-card, */
+  .voice-card {
+    border-radius: 22px;
+    padding: 32px 20px;
+  }
+
+  .audience-card {
+    min-height: auto;
+  }
+
+  .section-pad,
+  .audience,
+  .story,
+  .board,
+  .pillars,
+  .involve,
+  .news,
+  .resources,
+  .contact {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .disease-links {
+    gap: 5px;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-size: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .section-lead {
+    font-size: 18px;
+    line-height: 29.9px;
+}
+.disease-card p {
+    font-size: 16px;
+    line-height: 26.1px;
+}
+.audience-lead {
+    font-size: 22px;
+    line-height: 30px;
+}
+.story-quote {
+    padding: 9px 0 0 15px;
+}
+.audience-card .start {
+    padding-top: 20px;
+    font-size: 18px;
+}
+  .btn-yellow,
+  .btn-outline-light,
+  .btn-navy,
+  .btn-outline-navy,
+  .btn-pill-navy,
+  .btn-pill-red,
+  .btn-rsvp {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-ctas {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .involve-card, .resource-card {
+      min-height: auto;
+  }
+  .news-featured-body h3, .news-side-card h3 {
+      font-size: 26px;
+  }
+  
+}
+
+@media (max-width: 420px) {
+  .nav-primary {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .nav-logo {
+    width: 120px;
+    height: 50px;
+  }
+
+  .hero-ctas,
+  .blood-banner-actions {
+    gap: 12px;
+  }
+
+  .btn-pill-navy,
+  .btn-pill-red,
+  .btn-rsvp,
+  .btn-yellow,
+  .btn-outline-light {
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .story-copy h2,
+  .contact-copy h2 {
+    font-size: 2rem;
+  }
+
+  .audience-title {
+    font-size: 2.2rem;
+  }
+
+  .news-featured-body h3,
+  .news-side-card h3,
+  .resource-card h3,
+  .involve-card h3,
+  .disease-card h3,
+  .audience-card h3 {
+    font-size: 24px;
+  }
+
+  .hero-media {
+    height: 260px;
+  }
+
+  .news-featured-media {
+    height: 240px;
+  }
+}
