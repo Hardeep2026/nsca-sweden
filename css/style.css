@@ -1295,7 +1295,7 @@ img {
   font-size: 18px;
   color: var(--footer-muted);
 }
-
+.page[hidden]{display:none}
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1200px) {
   .hero-content {
