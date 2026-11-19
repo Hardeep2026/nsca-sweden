@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NSCA Sweden — National Sickle Cell Association</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
+
 <body>
   <!-- HERO -->
   <header class="hero" id="top">
@@ -21,10 +24,22 @@
         </a>
 
         <div class="nav-links">
-          <a href="#audience">Find your place <img src="assets/chevron.svg" alt="" width="11.5" height="10.75" /></a>
-          <a href="#story">Our story & Get involved <img src="assets/chevron.svg" alt="" width="11.5" height="10.75" /></a>
+          <div class="nav-item has-dropdown">
+            <button class="nav-link-btn nav-dropdown-toggle" type="button" aria-expanded="false"
+              aria-controls="findPlaceMenu" id="findPlaceToggle">
+              Find your place
+              <img src="assets/chevron.svg" alt="" width="11.5" height="10.75" />
+            </button>
+            <ul class="nav-dropdown" id="findPlaceMenu" role="list">
+              <li><a href="teenagers.html">Teenagers &amp; young adults</a></li>
+              <li><a href="adults.html">Adults</a></li>
+              <li><a href="parents.html">Parents &amp; carers</a></li>
+              <li><a href="family.html">Family &amp; friends</a></li>
+            </ul>
+          </div>
+          <a href="our-story.html">Our story & Get involved</a>
           <!-- <a href="#involve">Get involved <img src="assets/chevron.svg" alt="" width="11.5" height="10.75" /></a> -->
-          <a href="#news">News &amp; events <img src="assets/chevron.svg" alt="" width="11.5" height="10.75" /></a>
+          <a href="news-events.html">News &amp; events</a>
           <!-- <a href="#resources">Resources <img src="assets/chevron.svg" alt="" width="11.5" height="10.75" /></a> -->
         </div>
 
@@ -34,10 +49,11 @@
             <span class="sep">|</span>
             <a class="inactive" href="#">SV</a>
           </div>
-          <a class="btn-join" href="#involve">Join us <img src="assets/arrow-white.svg" alt="" width="11" height="9" /></a>
+          <a class="btn-join" href="#involve">Join us <img src="assets/arrow-white.svg" alt="" width="11"
+              height="9" /></a>
           <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false">
             <svg width="28" height="20" viewBox="0 0 28 20" fill="none" aria-hidden="true">
-              <path d="M1 1h26M1 10h26M1 19h26" stroke="#033069" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M1 1h26M1 10h26M1 19h26" stroke="#033069" stroke-width="2.5" stroke-linecap="round" />
             </svg>
           </button>
         </div>
@@ -52,25 +68,29 @@
               <img src="assets/hero-underline.svg" alt="" width="379" height="5" />
             </div>
             <p class="hero-lead">
-              You might live with it, raise a child who does, or love someone
-              who does. Whichever it is, you are not explaining it alone
+              You might live with it, raise a child, or love someone
+              who does. Whichever it is, you are not alone
               anymore.
             </p>
           </div>
 
           <div class="hero-ctas">
-            <a class="btn-yellow" href="#audience">Find your place <img src="assets/arrow-dark.svg" alt="" width="14" height="12" /></a>
-            <a class="btn-outline-light" href="https://www.geblod.nu/" target="_blank" rel="noopener">Give blood · Geblod.nu</a>
+            <a class="btn-yellow" href="#audience">Find your place <img src="assets/arrow-dark.svg" alt="" width="14"
+                height="12" /></a>
+            <a class="btn-outline-light" href="https://www.geblod.nu/" target="_blank" rel="noopener">Give blood ·
+              Geblod.nu</a>
           </div>
 
           <p class="hero-note">
-            Sweden’s first patient-led organisation dedicated entirely to sickle cell disease.<br />
+            Sweden’s first patient-led organisation dedicated entirely to sickle cell disease.
             Launched 13 June 2026.
           </p>
         </div>
 
         <div class="hero-media">
-          <img src="assets/hero-group.jpg" alt="Group photo from the NSCA Sweden launch day, 13 June 2026" />
+          <video autoplay muted loop playsinline class="hero-media-video" aria-label="NSCA Sweden launch day video">
+            <source src="assets/home.mov" type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
@@ -81,7 +101,7 @@
     <div class="container-nsca">
       <h2 class="section-title">What is sickle cell disease?</h2>
       <p class="section-lead">
-        Sickle cell disease is a genetic blood disorder that you are born with. It is 
+        Sickle cell disease is a genetic blood disorder that you are born with. It is
         lifelong. With good care, people can live full lives.
       </p>
 
@@ -131,7 +151,8 @@
       </div>
 
       <div class="disease-links">
-        <a class="link-red" href="#resources">More questions answered <img src="assets/arrow-more.svg" alt="" width="18" height="18" /></a>
+        <a class="link-red" href="#resources">More questions answered <img src="assets/arrow-more.svg" alt="" width="18"
+            height="18" /></a>
         <a class="link-navy-underline" href="#resources">How do I find out my genotype?</a>
       </div>
     </div>
@@ -143,42 +164,49 @@
       <div class="audience-head">
         <p class="eyebrow eyebrow-center">START WHERE YOU ARE</p>
         <div class="audience-title-wrap">
-          <h2 class="audience-title">Who are you here <span class="for-word">for?<img class="audience-underline" src="assets/quote.svg" alt="" width="107" height="7" /></span></h2>
+          <h2 class="audience-title">Who are you here <span class="for-word">for?<img class="audience-underline"
+                src="assets/quote.svg" alt="" width="107" height="7" /></span></h2>
         </div>
         <p class="audience-lead">Pick the one that sounds like you. Each door leads to what matters first for you.</p>
       </div>
 
       <div class="audience-grid">
-        <article class="audience-card">
+        <article class="audience-card" id="audience-teens">
           <img class="icon" src="assets/icon-teen.svg" alt="" width="38" height="38" />
           <p class="label">TEENAGE TO YOUNG ADULT</p>
           <h3>I’m a teenager or young adult living with sickle cell</h3>
           <p>Your care, your voice. Moving to adult care, school and work, and people your age who get it.</p>
-          <a class="start" href="#resources">Start here <img src="assets/arrow-start.svg" alt="" width="23" height="23" /></a>
+          <a class="start" href="teenagers.html">Start here <img src="assets/arrow-start.svg" alt="" width="23"
+              height="23" /></a>
         </article>
 
-        <article class="audience-card">
+        <article class="audience-card" id="audience-adults">
           <img class="icon" src="assets/icon-adult.svg" alt="" width="38" height="38" />
           <p class="label">ADULTS</p>
           <h3>I’m an adult living with sickle cell</h3>
-          <p>Know your care, know your rights. Guidance for emergencies, finding the right specialist, and a member community.</p>
-          <a class="start" href="#resources">Start here <img src="assets/arrow-start.svg" alt="" width="23" height="23" /></a>
+          <p>Know your care, know your rights. Guidance for emergencies, finding the right specialist, and a member
+            community.</p>
+          <a class="start" href="adults.html">Start here <img src="assets/arrow-start.svg" alt="" width="23"
+              height="23" /></a>
         </article>
 
-        <article class="audience-card">
+        <article class="audience-card" id="audience-parents">
           <img class="icon" src="assets/icon-parent.svg" alt="" width="38" height="38" />
           <p class="label">PARENTS &amp; CARERS</p>
           <h3>I’m raising a child with sickle cell</h3>
-          <p>You don’t have to navigate this alone. First steps after diagnosis, school guidance, and other families.</p>
-          <a class="start" href="#resources">Start here <img src="assets/arrow-start.svg" alt="" width="23" height="23" /></a>
+          <p>You don’t have to navigate this alone. First steps after diagnosis, school guidance, and other families.
+          </p>
+          <a class="start" href="parents.html">Start here <img src="assets/arrow-start.svg" alt="" width="23"
+              height="23" /></a>
         </article>
 
-        <article class="audience-card">
+        <article class="audience-card" id="audience-family">
           <img class="icon" src="assets/icon-ally.svg" alt="" width="38" height="38" />
           <p class="label">FAMILY &amp; FRIENDS</p>
           <h3>I love someone with sickle cell</h3>
           <p>Stand beside them. Understand a crisis, give blood, and show up where it counts.</p>
-          <a class="start" href="#resources">Start here <img src="assets/arrow-start.svg" alt="" width="23" height="23" /></a>
+          <a class="start" href="family.html">Start here <img src="assets/arrow-start.svg" alt="" width="23"
+              height="23" /></a>
         </article>
       </div>
 
@@ -213,7 +241,11 @@
           <p class="eyebrow">WHY THIS EXISTS</p>
           <h2>Nobody should have to explain sickle cell for the first time in an emergency room.</h2>
           <blockquote class="story-quote">
-            <p>“I have lived with sickle cell disease for 45 years. And I know from experience what makes the difference. When your care is consistent, when the people around you understand your condition and you trust them, something profound shifts. You stop bracing. You start living. You build a career, raise a family, pursue the life you want, because the foundation is there. That is not a luxury. That is what good healthcare makes possible. And it is what every person with sickle cell in Sweden deserves.”</p>
+            <p>“I have lived with sickle cell disease for 45 years. And I know from experience what makes the
+              difference. When your care is consistent, when the people around you understand your condition and you
+              trust them, something profound shifts. You stop bracing. You start living. You build a career, raise a
+              family, pursue the life you want, because the foundation is there. That is not a luxury. That is what good
+              healthcare makes possible. And it is what every person with sickle cell in Sweden deserves.”</p>
           </blockquote>
           <div class="story-byline">
             <strong>Toni Forsberg</strong>
@@ -252,22 +284,22 @@
       <h2>Meet the board</h2>
       <div class="board-grid">
         <article class="board-card">
-          <img src="assets/toni.jpg" alt="Toni Forsberg" />
+          <img src="assets/toni.png" alt="Toni Forsberg" />
           <h3>Toni Forsberg</h3>
           <p>Founder, Chairperson</p>
         </article>
         <article class="board-card">
-          <img src="assets/eric.jpg" alt="Eric Forsberg" />
+          <img src="assets/eric.png" alt="Eric Forsberg" />
           <h3>Eric Forsberg</h3>
           <p>Vice Chair &amp; Treasurer</p>
         </article>
         <article class="board-card">
-          <img src="assets/maheswari.jpg" alt="Maheswari Mariappan" />
+          <img src="assets/maheswari.png" alt="Maheswari Mariappan" />
           <h3>Maheswari Mariappan</h3>
           <p>Board Member &amp; Verifier</p>
         </article>
         <article class="board-card">
-          <img src="assets/samuel.jpg" alt="Samuel Asiwaju" />
+          <img src="assets/samuel.png" alt="Samuel Asiwaju" />
           <h3>Samuel Asiwaju</h3>
           <p>Secretary</p>
         </article>
@@ -287,17 +319,20 @@
         <article class="pillar-card">
           <img class="icon" src="assets/icon-community.svg" alt="" width="64" height="64" />
           <h3>Community Outreach</h3>
-          <p>Raising awareness among the Swedish public, employers and schools, and building a peer network so no patient or family navigates the condition alone.</p>
+          <p>Raising awareness among the Swedish public, employers and schools, and building a peer network so no
+            patient or family navigates the condition alone.</p>
         </article>
         <article class="pillar-card">
           <img class="icon" src="assets/icon-education.svg" alt="" width="64" height="64" />
           <h3>Patient Education</h3>
-          <p>Equipping patients with the knowledge and resources to manage their condition with confidence, and simplifying guidance within Swedish healthcare.</p>
+          <p>Equipping patients with the knowledge and resources to manage their condition with confidence, and
+            simplifying guidance within Swedish healthcare.</p>
         </article>
         <article class="pillar-card">
           <img class="icon" src="assets/icon-partnerships.svg" alt="" width="64" height="64" />
           <h3>Strategic Partnerships</h3>
-          <p>Working with hospitals, government bodies and researchers to standardise care across Sweden and ensure equal access to clinical trials and emerging therapies.</p>
+          <p>Working with hospitals, government bodies and researchers to standardise care across Sweden and ensure
+            equal access to clinical trials and emerging therapies.</p>
         </article>
       </div>
     </div>
@@ -311,13 +346,16 @@
       <div class="involve-grid">
         <article class="involve-card is-yellow">
           <h3>Give blood</h3>
-          <p>Matched blood is a lifeline for many people with sickle cell. Find out how matched blood helps and how to register as a donor.</p>
-          <div class="cta"><a class="btn-pill-navy" href="https://www.geblod.nu/" target="_blank" rel="noopener">Give blood</a></div>
+          <p>Matched blood is a lifeline for many people with sickle cell. Find out how matched blood helps and how to
+            register as a donor.</p>
+          <div class="cta"><a class="btn-pill-navy" href="https://www.geblod.nu/" target="_blank" rel="noopener">Give
+              blood</a></div>
         </article>
         <article class="involve-card">
           <h3>Join us in person</h3>
-          <p>Come to a patient circle, a seminar or an awareness event. Bring a friend, a colleague or a family member.</p>
-          <div class="cta"><a class="btn-pill-red" href="#news">See what's on</a></div>
+          <p>Come to a patient circle, a seminar or an awareness event. Bring a friend, a colleague or a family member.
+          </p>
+          <div class="cta"><a class="btn-pill-red" href="news-events.html">See what's on</a></div>
         </article>
         <article class="involve-card">
           <h3>Become a<br />member</h3>
@@ -326,7 +364,8 @@
         </article>
         <article class="involve-card">
           <h3>Partner with us</h3>
-          <p>Work with us as an organisation. Partners support our programmes. They never decide what we say or publish.</p>
+          <p>Work with us as an organisation. Partners support our programmes. They never decide what we say or publish.
+          </p>
           <div class="cta"><a class="btn-pill-red" href="#contact">Partner with us</a></div>
         </article>
       </div>
@@ -341,7 +380,7 @@
       <div class="news-layout">
         <article class="news-featured">
           <div class="news-featured-media">
-            <img src="assets/news-featured.png" alt="Featured event visual" />
+            <img src="assets/hero-group.jpg" alt="Group photo from the NSCA Sweden launch day, 13 June 2026" />
           </div>
           <div class="news-featured-body">
             <p class="news-meta">NEXT UP · JANUARY 2027</p>
@@ -359,18 +398,20 @@
             <div class="news-side-card-body">
               <p class="news-meta">6th June 2026 · PAST EVENT</p>
               <h3>Speaking engagement at Ghana Fest Sweden</h3>
-              <p>We spoke to the community, busted myths about sickle cell, and asked everyone to do two things: give blood and know your genotype.</p>
+              <p>We spoke to the community, busted myths about sickle cell, and asked everyone to do two things: give
+                blood and know your genotype.</p>
             </div>
           </article>
 
           <article class="news-side-card">
             <div class="thumb">
-              <img src="assets/news-planning.png" alt="Members planning a circle around a table" />
+              <img src="assets/news-planning.jpeg" alt="Members planning a circle around a table" />
             </div>
             <div class="news-side-card-body">
               <p class="news-meta">15th August 2026 · PAST EVENT</p>
               <h3>Exhibiting at Parade of Nations</h3>
-              <p>We met people from Ghana, Nigeria, Botswana, Jamaica, Zimbabwe, Eritrea, Somalia and Sweden, and built connections with embassies, Afrosvenska and African Professionals in Sweden.</p>
+              <p>We met people from Ghana, Nigeria, Botswana, Jamaica, Zimbabwe, Eritrea, Somalia and Sweden, and built
+                connections with embassies, Afrosvenska and African Professionals in Sweden.</p>
             </div>
           </article>
 
@@ -393,22 +434,26 @@
         <article class="resource-card">
           <p class="tag">EVERYONE</p>
           <h3>What is sickle cell disease?</h3>
-          <a class="more" href="#disease">Read more <img src="assets/arrow-start.svg" alt="" width="23" height="23" /></a>
+          <a class="more" href="#disease">Read more <img src="assets/arrow-start.svg" alt="" width="23"
+              height="23" /></a>
         </article>
         <article class="resource-card">
           <p class="tag">ADULTS · YOUNG ADULTS</p>
           <h3>What to say and carry in an emergency room.</h3>
-          <a class="more" href="#contact">Read more <img src="assets/arrow-start.svg" alt="" width="23" height="23" /></a>
+          <a class="more" href="#contact">Read more <img src="assets/arrow-start.svg" alt="" width="23"
+              height="23" /></a>
         </article>
         <article class="resource-card">
           <p class="tag">PARENTS</p>
           <h3>Talking to your child’s school and daycare.</h3>
-          <a class="more" href="#contact">Read more <img src="assets/arrow-start.svg" alt="" width="23" height="23" /></a>
+          <a class="more" href="#contact">Read more <img src="assets/arrow-start.svg" alt="" width="23"
+              height="23" /></a>
         </article>
         <article class="resource-card">
           <p class="tag">Family &amp; friends</p>
           <h3>How to support someone through a crisis.</h3>
-          <a class="more" href="#contact">Read more <img src="assets/arrow-start.svg" alt="" width="23" height="23" /></a>
+          <a class="more" href="#contact">Read more <img src="assets/arrow-start.svg" alt="" width="23"
+              height="23" /></a>
         </article>
       </div>
     </div>
@@ -421,7 +466,8 @@
         <div class="contact-copy">
           <p class="eyebrow eyebrow-yellow">GET IN TOUCH</p>
           <h2>Write to us. A real person reads it.</h2>
-          <p class="intro">Tell us who you are and how we can help. We keep your message private and only use it to reply.</p>
+          <p class="intro">Tell us who you are and how we can help. We keep your message private and only use it to
+            reply.</p>
           <p class="details">
             nscasweden.se<br />
             Instagram @nscasweden<br />
@@ -485,4 +531,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
