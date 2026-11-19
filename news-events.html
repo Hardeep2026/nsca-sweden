@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News &amp; events — NSCA Sweden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body class="page-news">
+  <div class="page-nav-wrap" id="top">
+    <div class="container-nsca">
+      <nav class="nav-primary" id="primaryNav" aria-label="Primary">
+        <a class="nav-logo" href="index.html" aria-label="NSCA Sweden home">
+          <img src="assets/logo.png" alt="NSCA Sweden" />
+        </a>
+
+        <div class="nav-links">
+          <div class="nav-item has-dropdown">
+            <button class="nav-link-btn nav-dropdown-toggle" type="button" aria-expanded="false"
+              aria-controls="findPlaceMenu" id="findPlaceToggle">
+              Find your place
+              <img src="assets/chevron.svg" alt="" width="11.5" height="10.75" />
+            </button>
+            <ul class="nav-dropdown" id="findPlaceMenu" role="list">
+              <li><a href="teenagers.html">Teenagers &amp; young adults</a></li>
+              <li><a href="adults.html">Adults</a></li>
+              <li><a href="parents.html">Parents &amp; carers</a></li>
+              <li><a href="family.html">Family &amp; friends</a></li>
+            </ul>
+          </div>
+          <a href="our-story.html">Our story & Get involved</a>
+          <a href="news-events.html" aria-current="page">News &amp; events</a>
+        </div>
+
+        <div class="nav-actions">
+          <div class="lang-switch" aria-label="Language">
+            <span class="active">EN</span>
+            <span class="sep">|</span>
+            <a class="inactive" href="#">SV</a>
+          </div>
+          <a class="btn-join" href="index.html#involve">Join us <img src="assets/arrow-white.svg" alt="" width="11"
+              height="9" /></a>
+          <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <svg width="28" height="20" viewBox="0 0 28 20" fill="none" aria-hidden="true">
+              <path d="M1 1h26M1 10h26M1 19h26" stroke="#033069" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- NEWS -->
+  <section class="news" id="news">
+    <div class="container-nsca">
+      <p class="eyebrow">NEWS &amp; EVENTS · AKTIVITETER</p>
+      <h2>Where we are gathering next</h2>
+      <div class="news-layout">
+        <article class="news-featured">
+           <div class="news-featured-media">
+            <img src="assets/hero-group.jpg" alt="Group photo from the NSCA Sweden launch day, 13 June 2026" />
+          </div>
+          <div class="news-featured-body">
+            <p class="news-meta">NEXT UP · JANUARY 2027</p>
+            <h3>Patient circle</h3>
+            <p>We meet to support one another. More details to come, including the date and place.</p>
+            <a class="btn-rsvp" href="#contact">RSVP</a>
+          </div>
+        </article>
+
+        <div class="news-side">
+          <article class="news-side-card">
+            <div class="thumb">
+              <img src="assets/news-outdoor.png" alt="People gathered outdoors at an NSCA Sweden speaking engagement" />
+            </div>
+            <div class="news-side-card-body">
+              <p class="news-meta">6th June 2026 · PAST EVENT</p>
+              <h3>Speaking engagement at Ghana Fest Sweden</h3>
+              <p>We spoke to the community, busted myths about sickle cell, and asked everyone to do two things: give
+                blood and know your genotype.</p>
+            </div>
+          </article>
+
+          <article class="news-side-card">
+            <div class="thumb">
+              <img src="assets/news-planning.jpeg" alt="Members planning a circle around a table" />
+            </div>
+            <div class="news-side-card-body">
+              <p class="news-meta">15th August 2026 · PAST EVENT</p>
+              <h3>Exhibiting at Parade of Nations</h3>
+              <p>We met people from Ghana, Nigeria, Botswana, Jamaica, Zimbabwe, Eritrea, Somalia and Sweden, and built
+                connections with embassies, Afrosvenska and African Professionals in Sweden.</p>
+            </div>
+          </article>
+
+          <article class="news-side-card is-text-only">
+            <p class="news-meta">13 JUNE 2026 · PAST EVENT</p>
+            <h3>Launch Event: Unveiling NSCA Sweden</h3>
+            <p>The day Sweden's first patient-led sickle cell organisation went public.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="contact" id="contact">
+    <div class="container-nsca">
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow eyebrow-yellow">GET IN TOUCH</p>
+          <h2>Write to us. A real person reads it.</h2>
+          <p class="intro">Tell us who you are and how we can help. We keep your message private and only use it to
+            reply.</p>
+          <p class="details">
+            nscasweden.se<br />
+            Instagram @nscasweden<br />
+            [CONTACT EMAIL]
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+          </div>
+          <div class="form-field full">
+            <label for="role">I’m a...</label>
+            <select id="role" name="role">
+              <option>Teenager or young adult living with sickle cell</option>
+              <option>Adult living with sickle cell</option>
+              <option>Parent or carer</option>
+              <option>Family member or friend</option>
+              <option>Healthcare professional</option>
+              <option>Organisation / partner</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label for="message">How we can help?</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <div class="form-submit">
+            <button class="btn-yellow" type="submit">
+              Send message
+              <img src="assets/arrow-dark.svg" alt="" width="14" height="12" />
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer-partners">
+        <div class="partners-left">
+          <p class="partners-label">In partnership with</p>
+          <a class="partner-badge" href="#" aria-label="Vertex">
+            <img src="assets/partner-vertex.svg" alt="Vertex" width="96" height="59" />
+          </a>
+          <a class="partner-badge" href="#" aria-label="NIDO Sweden">
+            <img src="assets/partner-nido.svg" alt="NIDO Sweden" width="120" height="62" />
+          </a>
+        </div>
+        <a class="partner-link" href="index.html#involve">How we work with partners</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 NSCA Sweden National Sickle Cell Association Sweden</p>
+        <p>Privacy · Accessibility · Svenska</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
