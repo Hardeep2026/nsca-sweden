@@ -66,7 +66,8 @@
       if (url.hash) requestAnimationFrame(() => scrollToId(url.hash));
     } catch (error) {
       // Fallback: normal navigation (URL will change)
-      window.location.href = url.href;
+      //window.location.href = url.href;
+       console.error("Could not load " + url.pathname + ". Open the site from a server, not file://", error);
     }
   };
 
