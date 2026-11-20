@@ -276,6 +276,7 @@
   .involve h2,
   .news h2,
   .resources h2,
+  .faq h2,
   .pillars h2,
   .contact-copy h2,
   .story-copy h2 {
@@ -522,8 +523,23 @@
   .audience-grid,
   .board-grid,
   .involve-grid,
-  .resources-grid {
+  .resources-grid,
+  .faq-container {
     grid-template-columns: 1fr;
+  }
+
+  .faq-question {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .faq-question::after {
+    font-size: 24px;
+  }
+
+  .faq-answer p {
+    font-size: 15px;
+    line-height: 22px;
   }
 
   .blood-banner {
@@ -640,6 +656,7 @@
   .involve h2,
   .news h2,
   .resources h2,
+  .faq h2,
   .pillars h2,
   .contact-copy h2,
   .story-copy h2 {
@@ -661,9 +678,27 @@
   .news-side-card,
   .news-featured,
   /* .board-card, */
-  .voice-card {
+  .voice-card,
+  .faq-item {
     border-radius: 22px;
     padding: 32px 20px;
+  }
+
+  .faq-item {
+    padding: 0;
+  }
+
+  .faq-question {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    padding: 0 20px 20px 20px;
+  }
+
+  .faq-answer p {
+    font-size: 14px;
   }
 
   .audience-card {
@@ -678,6 +713,7 @@
   .involve,
   .news,
   .resources,
+  .faq,
   .contact {
     padding-top: 52px;
     padding-bottom: 52px;
