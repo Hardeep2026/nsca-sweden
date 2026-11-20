@@ -201,6 +201,23 @@
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeMobileNav();
   });
+
+  /* ---------- FAQ Accordion (only one open at a time) ---------- */
+  document.addEventListener("click", (event) => {
+    const summary = event.target.closest(".faq-question");
+    if (!summary) return;
+
+    const details = summary.closest(".faq-item");
+    if (!details) return;
+
+    // Close all other FAQ items
+    const allDetails = document.querySelectorAll(".faq-item");
+    allDetails.forEach((item) => {
+      if (item !== details && item.hasAttribute("open")) {
+        item.removeAttribute("open");
+      }
+    });
+  });
 })();
   const formDone = { contactForm: "Message sent ✓", missingForm: "Thanks — noted ✓" };
 
