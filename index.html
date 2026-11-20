@@ -22,6 +22,11 @@
         </a>
 
         <div class="nav-links">
+          <a href="index.html">Home </a>
+          <a href="our-story.html">Our story </a>
+          <a href="news-events.html">News &amp; events</a>
+           
+          
           <div class="nav-item has-dropdown">
             <button class="nav-link-btn nav-dropdown-toggle" type="button" aria-expanded="false"
               aria-controls="findPlaceMenu" id="findPlaceToggle">
@@ -30,15 +35,12 @@
             </button>
             <ul class="nav-dropdown" id="findPlaceMenu" role="list">
               <li><a href="teenagers.html">Teenagers &amp; young adults</a></li>
-              <li><a href="adults.html">Adults</a></li>
+              <li><a href="adults.html" aria-current="page">Adults</a></li>
               <li><a href="parents.html">Parents &amp; carers</a></li>
               <li><a href="family.html">Family &amp; friends</a></li>
             </ul>
           </div>
-          <a href="our-story.html">Our story </a>
           <a href="get-involved.html">Get involved </a> 
-          <a href="news-events.html">News &amp; events</a>
-          <!-- <a href="#resources">Resources <img src="assets/chevron.svg" alt="" width="11.5" height="10.75" /></a> -->
         </div>
 
         <div class="nav-actions">
@@ -86,9 +88,10 @@
         </div>
 
         <div class="hero-media">
-          <video autoplay muted loop playsinline class="hero-media-video" aria-label="NSCA Sweden launch day video">
+          <img src="assets/hero-group.jpg" alt="" width="100%" height="auto" />
+          <!-- <video autoplay muted loop playsinline class="hero-media-video" aria-label="NSCA Sweden launch day video">
             <source src="assets/home.mov" type="video/mp4" />
-          </video>
+          </video> -->
         </div>
       </div>
     </div>
@@ -378,12 +381,16 @@
       <div class="news-layout">
         <article class="news-featured">
           <div class="news-featured-media">
-            <img src="assets/hero-group.jpg" alt="Group photo from the NSCA Sweden launch day, 13 June 2026" />
+            <video autoplay muted loop playsinline class="hero-media-video" aria-label="NSCA Sweden launch day video">
+            <source src="assets/home.mov" type="video/mp4" />
+          </video> 
+            
           </div>
           <div class="news-featured-body">
-            <p class="news-meta">NEXT UP · JANUARY 2027</p>
-            <h3>Patient circle</h3>
-            <p>We meet to support one another. More details to come, including the date and place.</p>
+           
+            <p class="news-meta">13 JUNE 2026 · PAST EVENT</p>
+            <h3>Launch Event: Unveiling NSCA Sweden</h3>
+            <p>The day Sweden's first patient-led sickle cell organisation went public.</p>
             <a class="btn-rsvp" href="#contact">RSVP</a>
           </div>
         </article>
@@ -413,46 +420,75 @@
             </div>
           </article>
 
-          <article class="news-side-card is-text-only">
-            <p class="news-meta">13 JUNE 2026 · PAST EVENT</p>
-            <h3>Launch Event: Unveiling NSCA Sweden</h3>
-            <p>The day Sweden's first patient-led sickle cell organisation went public.</p>
+          <article class="news-side-card">
+            <div class="thumb">
+              <img src="assets/patient-circle.jpg" alt="Members planning a circle around a table" />
+            </div>
+            <div class="news-side-card-body">
+             <p class="news-meta">NEXT UP · JANUARY 2027</p>
+            <h3>Patient circle</h3>
+            <p>We meet to support one another. More details to come, including the date and place.</p>
+            </div>
           </article>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- RESOURCES -->
-  <section class="resources" id="resources">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
     <div class="container-nsca">
-      <p class="eyebrow eyebrow-center">RESOURCES</p>
-      <h2>Know it before you need it</h2>
-      <div class="resources-grid">
-        <article class="resource-card">
-          <p class="tag">EVERYONE</p>
-          <h3>What is sickle cell disease?</h3>
-          <a class="more" href="/nsca-sweden/teenagers.html">Read more <img src="assets/arrow-start.svg" alt="" width="23"
-              height="23" /></a>
-        </article>
-        <article class="resource-card">
-          <p class="tag">ADULTS · YOUNG ADULTS</p>
-          <h3>What to say and carry in an emergency room.</h3>
-          <a class="more" href="/nsca-sweden/adults.html">Read more <img src="assets/arrow-start.svg" alt="" width="23"
-              height="23" /></a>
-        </article>
-        <article class="resource-card">
-          <p class="tag">PARENTS</p>
-          <h3>Talking to your child’s school and daycare.</h3>
-          <a class="more" href="/nsca-sweden/parents.html">Read more <img src="assets/arrow-start.svg" alt="" width="23"
-              height="23" /></a>
-        </article>
-        <article class="resource-card">
-          <p class="tag">Family &amp; friends</p>
-          <h3>How to support someone through a crisis.</h3>
-          <a class="more" href="/nsca-sweden/family.html">Read more <img src="assets/arrow-start.svg" alt="" width="23"
-              height="23" /></a>
-        </article>
+      <p class="eyebrow eyebrow-center">FREQUENTLY ASKED QUESTIONS</p>
+      <h2>Your Questions, Answered</h2>
+      <div class="faq-container">
+        <details class="faq-item">
+          <summary class="faq-question">What is NSCA Sweden?</summary>
+          <div class="faq-answer">
+            <p>NSCA Sweden (National Sickle Cell Association Sweden) is a patient-led, non-profit national association (riksförening). Our goal is to ensure that every person living with Sickle Cell Disease in Sweden has access to high-quality, informed, and equal healthcare.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">What is Sickle Cell Disease (SCD)?</summary>
+          <div class="faq-answer">
+            <p>Sickle Cell Disease (Swedish: sicklecellsjukdom or sicklecellanemi) is an inherited blood disorder. Under low-oxygen conditions, the red blood cells become rigid and take on a sickle (crescent) shape. These rigid cells can clump together and block microcirculation in capillaries, causing severe acute pain crises (smärtkriser) and tissue hypoxia.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">What is the difference between having Sickle Cell Trait and Sickle Cell Disease?</summary>
+          <div class="faq-answer">
+            <p>Sickle Cell Trait (Swedish: bärare av sicklecellgenen, HbAS) means carrying only one copy of the mutated gene. Carriers are completely healthy, have a normal lifespan, and do not experience disease symptoms. Sickle Cell Disease (HbSS) is the active disease that occurs only when an individual inherits two copies of the mutated gene (one from each parent).</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Why are blood donors from diverse genetic backgrounds needed in Sweden?</summary>
+          <div class="faq-answer">
+            <p>Blood matching requires more than just checking standard ABO and RhD groups. There are hundreds of minor antigens on red blood cells linked to geographic ancestry. Since most current blood donors in Sweden are of Scandinavian origin, patients of African, Middle Eastern, or Indian ancestry often face difficulties finding a closely matched donor, increasing their risk of severe immune reactions (alloimmunization). Diverse donors save lives.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">What are the rules to donate blood in Sweden via GeBlod?</summary>
+          <div class="faq-answer">
+            <p>According to Socialstyrelsen, you must have a Swedish civic number (personnummer), present valid photo identification, weigh at least 50 kg, and be between 18 and 60 years old. While completing medical assessments is necessary for clinical safety, many donation centers can accommodate English-speakers or provide support resources to assist you.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">How can I support the sickle cell community in Sweden, including knowing my genotype and donating blood?</summary>
+          <div class="faq-answer">
+            <p>You can support the community by requesting a carrier screening from your local healthcare provider (Vårdcentral) to know your genotype, registering as a blood donor via GeBlod.nu if eligible, sharing your journey on our digital storyboard, or participating in our regional educational workshops and advocacy events.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">How do I find out my genotype (sickle cell carrier status) in Sweden?</summary>
+          <div class="faq-answer">
+            <p>You can find out if you carry the sickle cell gene (HbAS) or have other hemoglobin variants by requesting a blood test through your primary care doctor (Vårdcentral) in Sweden. The test is typically called physical hemoglobin analysis, often referred to as hemoglobin electrophoreses (hemoglobinelektrofores) or HPLC. Simply discuss with your physician or Vårdcentral practitioner that you wish to screen for hemoglobin variants or carrier status.</p>
+          </div>
+        </details>
       </div>
     </div>
   </section>
@@ -469,7 +505,7 @@
           <p class="details">
             nscasweden.se<br />
             Instagram @nscasweden<br />
-            [CONTACT EMAIL]
+            nsca.sweden@gmail.com
           </p>
         </div>
 
@@ -477,11 +513,11 @@
         	<input type="hidden" name="access_key" value="e3b05d65-c42a-44a4-8c86-0a41c45560fa">
           <div class="form-field">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" />
+            <input id="name" name="name" type="text" autocomplete="name" required/>
           </div>
           <div class="form-field">
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" />
+            <input id="email" name="email" type="email" autocomplete="email" required />
           </div>
           <div class="form-field full">
             <label for="role">I’m a...</label>

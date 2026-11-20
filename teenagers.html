@@ -23,6 +23,11 @@
         </a>
 
         <div class="nav-links">
+          <a href="index.html">Home </a>
+          <a href="our-story.html">Our story </a>
+          <a href="news-events.html">News &amp; events</a>
+           
+          
           <div class="nav-item has-dropdown">
             <button class="nav-link-btn nav-dropdown-toggle" type="button" aria-expanded="false"
               aria-controls="findPlaceMenu" id="findPlaceToggle">
@@ -30,15 +35,13 @@
               <img src="assets/chevron.svg" alt="" width="11.5" height="10.75" />
             </button>
             <ul class="nav-dropdown" id="findPlaceMenu" role="list">
-              <li><a href="teenagers.html" aria-current="page">Teenagers &amp; young adults</a></li>
-              <li><a href="adults.html">Adults</a></li>
+              <li><a href="teenagers.html">Teenagers &amp; young adults</a></li>
+              <li><a href="adults.html" aria-current="page">Adults</a></li>
               <li><a href="parents.html">Parents &amp; carers</a></li>
               <li><a href="family.html">Family &amp; friends</a></li>
             </ul>
           </div>
-          <a href="our-story.html">Our story </a>
-           <a href="get-involved.html">Get involved </a> 
-          <a href="news-events.html">News &amp; events</a>
+          <a href="get-involved.html">Get involved </a> 
         </div>
 
         <div class="nav-actions">
@@ -59,7 +62,7 @@
 
       <div class="teen-hero">
         <div class="teen-hero-copy">
-          <p class="hero-eyebrow">TEENAGE TO YOUNG ADULT · INFORMATION</p>
+          <p class="hero-eyebrow">TEENAGE TO YOUNG ADULT</p>
           <h1 class="hero-title teen-hero-title">
             Your care. <br><span class="voice-word">Your voice<img class="voice-underline"
                 src="assets/hero-underline.svg" alt="" width="160" height="5" /></span>. Your rights.
@@ -71,7 +74,7 @@
         </div>
 
         <div class="teen-hero-media" aria-label="Artwork placeholder">
-          <img src="assets/teen.jpeg" alt="Teenagers &amp; young adults" width="100%" height="auto" />
+          <img src="assets/teen.jpg" alt="Teenagers &amp; young adults" width="100%" height="auto" />
           <!-- <div class="teen-dev-note">
             <p><strong>DEVELOPER NOTE:</strong> Use a stock image placeholder here until the final artwork is ready.
               Final artwork: an animated cartoon of three young friends laughing together, leaning on a wall. Friendly
@@ -236,23 +239,24 @@
           <p class="details">
             nscasweden.se<br />
             Instagram @nscasweden<br />
-            [CONTACT EMAIL]
+            nsca.sweden@gmail.com
           </p>
         </div>
 
         <form class="contact-form" id="contactForm" novalidate>
+        	<input type="hidden" name="access_key" value="e3b05d65-c42a-44a4-8c86-0a41c45560fa">
           <div class="form-field">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" />
+            <input id="name" name="name" type="text" autocomplete="name" required/>
           </div>
           <div class="form-field">
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" />
+            <input id="email" name="email" type="email" autocomplete="email" required />
           </div>
           <div class="form-field full">
             <label for="role">I’m a...</label>
             <select id="role" name="role">
-              <option selected>Teenager or young adult living with sickle cell</option>
+              <option>Teenager or young adult living with sickle cell</option>
               <option>Adult living with sickle cell</option>
               <option>Parent or carer</option>
               <option>Family member or friend</option>
@@ -270,6 +274,8 @@
               <img src="assets/arrow-dark.svg" alt="" width="14" height="12" />
             </button>
           </div>
+          <input type="hidden" name="subject" value="New message from NSCA Sweden website">
+           <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
         </form>
       </div>
 
