@@ -1,0 +1,44 @@
+/* ========== GET INVOLVED PAGE ========== */
+
+.page-get-involved {
+  background: var(--cream);
+}
+
+.page-get-involved .involve {
+  padding-top: 40px;
+}
+
+.page-get-involved .involve-card,
+.page-get-involved .get-involved-banner {
+  scroll-margin-top: 120px;
+}
+
+.get-involved-banner {
+  margin-top: 40px;
+}
+
+@media (max-width: 1200px) {
+  .page-get-involved .get-involved-main-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .page-get-involved .involve {
+    padding-top: 24px;
+    padding-bottom: 52px;
+  }
+
+  .page-get-involved .get-involved-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-get-involved .involve-card,
+  .page-get-involved .get-involved-banner {
+    scroll-margin-top: 96px;
+  }
+
+  .get-involved-banner {
+    margin-top: 28px;
+  }
+}
