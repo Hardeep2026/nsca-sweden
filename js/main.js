@@ -202,3 +202,37 @@
     if (event.key === "Escape") closeMobileNav();
   });
 })();
+  const formDone = { contactForm: "Message sent ✓", missingForm: "Thanks — noted ✓" };
+
+  document.addEventListener("submit", async (event) => {
+    const form = event.target;
+    if (!(form instanceof HTMLFormElement) || !formDone[form.id]) return;
+
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+
+    const button = form.querySelector('button[type="submit"]');
+    const original = button.innerHTML;
+    button.disabled = true;
+    button.innerHTML = "Sending…";
+    let label = formDone[form.id];
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form),
+      });
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message);
+      form.reset();
+    } catch (error) {
+      label = "Failed — try again";
+    }
+
+    button.innerHTML = label;
+    window.setTimeout(() => {
+      button.disabled = false;
+      button.innerHTML = original;
+    }, 2000);
+  });
