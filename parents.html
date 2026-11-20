@@ -149,6 +149,7 @@
 
         <form class="teen-missing-card" id="missingForm" novalidate>
           <h3>Is something missing?</h3>
+           <input type="hidden" name="access_key" value="e3b05d65-c42a-44a4-8c86-0a41c45560fa">
           <p>If you looked for something and couldn't find it, tell us. We'll add it.</p>
           <label class="visually-hidden" for="lookedFor">What did you look for and not find?</label>
           <input id="lookedFor" name="lookedFor" type="text" placeholder="What did you look for and not find?" />
@@ -158,6 +159,8 @@
           <label class="visually-hidden" for="languageHelp">Which language would help most?</label>
           <input id="languageHelp" name="languageHelp" type="text" placeholder="Which language would help most?" />
           <button class="btn-pill-red" type="submit">Tell us what's missing</button>
+           <input type="hidden" name="subject" value="Tell us what's missing from NSCA Sweden website">
+           <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
         </form>
       </div>
     </div>
