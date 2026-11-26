@@ -253,3 +253,127 @@
       button.innerHTML = original;
     }, 2000);
   });
+
+
+/* ---------- Membership page (delegated, so it works after page swaps) ---------- */
+(() => {
+  const getForm = () => document.getElementById("membershipForm");
+
+  const syncMembership = () => {
+    const form = getForm();
+    if (!form) return;
+
+    const tier = form.querySelector('input[name="tier"]:checked');
+    const consent = form.querySelector("#consentData");
+    const summary = form.querySelector(".member-summary");
+
+    form.querySelector("#tierField").value = tier ? tier.value : "";
+    form.querySelector("#feeField").value = tier ? "SEK " + tier.dataset.fee + " / year" : "";
+    form.querySelector("#summaryTier").textContent = tier ? tier.value : "Please select a tier above";
+    form.querySelector("#summaryFee").textContent = tier ? "SEK " + tier.dataset.fee + " / year" : "—";
+    if (summary) summary.classList.toggle("has-tier", !!tier);
+
+    const ready = !!(tier && consent && consent.checked);
+    form.querySelector("#membershipSubmit").disabled = !ready;
+    const hint = form.querySelector("#membershipHint");
+    if (hint) hint.hidden = ready;
+  };
+
+  document.addEventListener("change", (event) => {
+    if (event.target instanceof Element && event.target.closest("#membershipForm")) syncMembership();
+  });
+
+  /* ---------- Thank-you popup ---------- */
+  const openMemberModal = () => {
+    const modal = document.getElementById("memberModal");
+    if (!modal) return;
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    const box = modal.querySelector(".member-modal-box");
+    if (box) {
+      box.scrollTop = 0;
+      box.focus();
+    }
+  };
+
+  const closeMemberModal = () => {
+    const modal = document.getElementById("memberModal");
+    if (modal) modal.hidden = true;
+    document.body.classList.remove("modal-open");
+  };
+
+  document.addEventListener("click", (event) => {
+    const target = event.target instanceof Element ? event.target : null;
+    if (!target) return;
+
+    if (target.closest("[data-modal-close]")) {
+      closeMemberModal();
+      const form = getForm();
+      if (form) form.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+    // "Return to Homepage" link: close the popup so page state is clean
+    if (target.closest("#memberModal a[href]")) closeMemberModal();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const modal = document.getElementById("memberModal");
+    if (modal && !modal.hidden) closeMemberModal();
+  });
+
+  document.addEventListener("submit", async (event) => {
+    const form = event.target;
+    if (!(form instanceof HTMLFormElement) || form.id !== "membershipForm") return;
+
+    event.preventDefault();
+    const button = form.querySelector("#membershipSubmit");
+    const status = form.querySelector("#membershipStatus");
+    const setStatus = (text, type) => {
+      status.textContent = text;
+      status.className = "member-status" + (type ? " is-" + type : "");
+    };
+
+    if (!form.querySelector('input[name="tier"]:checked')) {
+      setStatus("Please select a membership tier.", "error");
+      return;
+    }
+    if (!form.reportValidity()) return;
+
+    const original = button.innerHTML;
+    button.disabled = true;
+    button.textContent = "Sending…";
+    setStatus("", "");
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form),
+      });
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message);
+      // Fill the thank-you popup before the form is cleared
+      const val = (name) => (form.elements[name] ? form.elements[name].value.trim() : "");
+      const fullName = (val("first_name") + " " + val("last_name")).trim();
+      const tierRadio = form.querySelector('input[name="tier"]:checked');
+      const setText = (id, text) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = text;
+      };
+      setText("mmName", fullName);
+      setText("mmRef", fullName);
+      setText("mmEmail", val("email"));
+      setText("mmTier", tierRadio ? tierRadio.value : "");
+      setText("mmFee", tierRadio ? "SEK " + tierRadio.dataset.fee : "");
+
+      form.reset();
+      openMemberModal();
+    } catch (error) {
+      setStatus("Something went wrong. Please try again or email NSCA.Sweden@gmail.com.", "error");
+    }
+
+    button.innerHTML = original;
+    syncMembership();
+  });
+})();
