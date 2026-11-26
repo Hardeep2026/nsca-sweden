@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a member — NSCA Sweden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/membership.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body class="page-membership">
+  <div class="page-nav-wrap" id="top">
+    <div class="container-nsca">
+      <nav class="nav-primary" id="primaryNav" aria-label="Primary">
+        <a class="nav-logo" href="index.html" aria-label="NSCA Sweden home">
+          <img src="assets/logo.png" alt="NSCA Sweden" />
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home </a>
+          <a href="our-story.html">Our story </a>
+          <a href="news-events.html">News &amp; events</a>
+
+          <div class="nav-item has-dropdown">
+            <button class="nav-link-btn nav-dropdown-toggle" type="button" aria-expanded="false"
+              aria-controls="findPlaceMenu" id="findPlaceToggle">
+              Find your place
+              <img src="assets/chevron.svg" alt="" width="11.5" height="10.75" />
+            </button>
+            <ul class="nav-dropdown" id="findPlaceMenu" role="list">
+              <li><a href="teenagers.html">Teenagers &amp; young adults</a></li>
+              <li><a href="adults.html">Adults</a></li>
+              <li><a href="parents.html">Parents &amp; carers</a></li>
+              <li><a href="family.html">Family &amp; friends</a></li>
+            </ul>
+          </div>
+          <a href="get-involved.html" aria-current="page">Get involved </a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="btn-join" href="membership.html">Join us <img src="assets/arrow-white.svg" alt="" width="11"
+              height="9" /></a>
+          <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <svg width="28" height="20" viewBox="0 0 28 20" fill="none" aria-hidden="true">
+              <path d="M1 1h26M1 10h26M1 19h26" stroke="#033069" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main class="membership" id="membership">
+    <div class="container-nsca">
+      <div class="membership-wrap">
+
+        <!-- HEADER -->
+        <header class="membership-head">
+          <p class="eyebrow eyebrow-center">MEMBERSHIP</p>
+          <h1>Become a member</h1>
+          <p class="membership-quote">“You are not just joining an organisation. You are helping build the first
+            one.”</p>
+        </header>
+
+        <!-- FREE MEMBERSHIP NOTICE -->
+        <aside class="member-free" aria-labelledby="freeTitle">
+          <span class="member-free-icon" aria-hidden="true">
+            <img src="assets/icon-heart.svg" alt="" width="26" height="26" />
+          </span>
+          <div class="member-free-body">
+            <h2 id="freeTitle">Living with sickle cell disease? <span>Membership is free. Always.</span></h2>
+            <p>
+              Do not use this form. Email us directly at
+              <a href="mailto:NSCA.Sweden@gmail.com"><strong>NSCA.Sweden@gmail.com</strong></a>
+              and we will set you up. No proof required — your word is enough.
+            </p>
+          </div>
+          <a class="btn-pill-red"
+            href="mailto:NSCA.Sweden@gmail.com?subject=Free%20membership%20request&amp;body=Hello%20NSCA%20Sweden%2C%0A%0AI%20would%20like%20to%20request%20free%20membership.%0A%0AName%3A%20">
+            <svg width="16" height="12" viewBox="0 0 18 14" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="16" height="12" rx="2" stroke="#fff" stroke-width="1.8" />
+              <path d="m2 3 7 5.5L16 3" stroke="#fff" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            Request free membership via email
+          </a>
+        </aside>
+
+        <p class="member-howto">Paying member? Two quick steps: <strong>choose a tier</strong>, then
+          <strong>fill in your details</strong>. Fields marked <span class="req">*</span> are required.</p>
+
+        <form class="member-layout" id="membershipForm" novalidate>
+          <input type="hidden" name="access_key" value="e3b05d65-c42a-44a4-8c86-0a41c45560fa" />
+          <input type="hidden" name="subject" value="New membership application — NSCA Sweden" />
+          <input type="hidden" name="from_name" value="NSCA Sweden website" />
+          <input type="hidden" name="membership_tier" id="tierField" value="" />
+          <input type="hidden" name="annual_fee" id="feeField" value="" />
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" />
+
+          <!-- LEFT: TIERS -->
+          <section class="member-card member-tiers" aria-labelledby="step1">
+            <div class="member-step">
+              <h2 id="step1"><span class="step-badge">1</span> Select membership tier</h2>
+              <span class="member-pill">Founding perks included</span>
+            </div>
+
+            <div class="member-core">
+              <h3>Every member receives</h3>
+              <ul>
+                <li>Voting rights at the AGM</li>
+                <li>Digital founding certificate</li>
+                <li>Annual advocate newsletter</li>
+                <li>Priority event access</li>
+              </ul>
+            </div>
+
+            <fieldset class="tier-group">
+              <legend class="visually-hidden">Membership tier</legend>
+
+              <label class="tier-card" for="tierIndividual">
+                <input class="tier-input" type="radio" name="tier" id="tierIndividual" value="Individual"
+                  data-fee="200" required />
+                <span class="tier-dot" aria-hidden="true"></span>
+                <div class="tier-main">
+                  <div class="tier-row">
+                    <h3>Individual</h3>
+                    <div class="tier-price"><strong>SEK 200</strong><span>/ year</span></div>
+                  </div>
+                  <p class="tier-desc">For carers, advocates, healthcare allies, and community members.</p>
+                  <ul class="tier-list">
+                    <li>All core membership benefits included.</li>
+                  </ul>
+                  <span class="tier-select"><span class="tier-select-off">Tap to select</span><span
+                      class="tier-select-on">Selected</span></span>
+                </div>
+              </label>
+
+              <label class="tier-card" for="tierFamily">
+                <input class="tier-input" type="radio" name="tier" id="tierFamily" value="Family"
+                  data-fee="350" />
+                <span class="tier-dot" aria-hidden="true"></span>
+                <div class="tier-main">
+                  <div class="tier-row">
+                    <h3>Family <span class="tier-badge">Best value</span></h3>
+                    <div class="tier-price"><strong>SEK 350</strong><span>/ year</span></div>
+                  </div>
+                  <p class="tier-desc">Up to 2 adults and dependent children.</p>
+                  <ul class="tier-list">
+                    <li>All core membership benefits, plus:</li>
+                    <li>Covers up to 2 adults and dependent children</li>
+                  </ul>
+                  <span class="tier-select"><span class="tier-select-off">Tap to select</span><span
+                      class="tier-select-on">Selected</span></span>
+                </div>
+              </label>
+
+              <label class="tier-card" for="tierSupporting">
+                <input class="tier-input" type="radio" name="tier" id="tierSupporting" value="Supporting"
+                  data-fee="500" />
+                <span class="tier-dot" aria-hidden="true"></span>
+                <div class="tier-main">
+                  <div class="tier-row">
+                    <h3>Supporting</h3>
+                    <div class="tier-price"><strong>SEK 500</strong><span>/ year</span></div>
+                  </div>
+                  <p class="tier-desc">Healthcare professionals, organisations and corporate supporters.</p>
+                  <ul class="tier-list">
+                    <li>All core membership benefits, plus:</li>
+                    <li>Named acknowledgement in annual communications</li>
+                    <li>Early access to position papers and advocacy materials</li>
+                    <li>Right to note “Supporting Member, NSCA Sweden” in professional communications</li>
+                  </ul>
+                  <span class="tier-foot">
+                    <span class="tier-prestige">Prestige tier</span>
+                    <span class="tier-select"><span class="tier-select-off">Tap to select</span><span
+                        class="tier-select-on">Selected</span></span>
+                  </span>
+                </div>
+              </label>
+            </fieldset>
+          </section>
+
+          <!-- RIGHT: DETAILS -->
+          <section class="member-card member-details" aria-labelledby="step2">
+            <div class="member-step">
+              <h2 id="step2"><span class="step-badge">2</span> Your details &amp; consent</h2>
+            </div>
+
+            <div class="member-fields">
+              <div class="m-field">
+                <label for="firstName">First name <b class="req">*</b></label>
+                <input id="firstName" name="first_name" type="text" placeholder="Jane" autocomplete="given-name"
+                  required />
+              </div>
+              <div class="m-field">
+                <label for="lastName">Last name <b class="req">*</b></label>
+                <input id="lastName" name="last_name" type="text" placeholder="Doe" autocomplete="family-name"
+                  required />
+              </div>
+              <div class="m-field full">
+                <label for="memberEmail">Email address <b class="req">*</b></label>
+                <input id="memberEmail" name="email" type="email" placeholder="email@domain.com"
+                  autocomplete="email" required />
+              </div>
+              <div class="m-field full">
+                <label for="country">Country of residence <span>(optional)</span></label>
+                <select id="country" name="country" autocomplete="country-name">
+                  <option value="">Select country</option>
+                  <option>Sweden</option>
+                  <option>Denmark</option>
+                  <option>Finland</option>
+                  <option>Norway</option>
+                  <option>Iceland</option>
+                  <option>United Kingdom</option>
+                  <option>Ireland</option>
+                  <option>Germany</option>
+                  <option>France</option>
+                  <option>Netherlands</option>
+                  <option>Belgium</option>
+                  <option>Spain</option>
+                  <option>Italy</option>
+                  <option>Portugal</option>
+                  <option>Nigeria</option>
+                  <option>Ghana</option>
+                  <option>Kenya</option>
+                  <option>South Africa</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="m-field full">
+                <label for="connection">Your connection to sickle cell <span>(optional)</span></label>
+                <select id="connection" name="connection">
+                  <option value="">Select your connection</option>
+                  <option>Parent or carer</option>
+                  <option>Family member or friend</option>
+                  <option>Healthcare professional</option>
+                  <option>Researcher</option>
+                  <option>Advocate or ally</option>
+                  <option>Organisation or corporate supporter</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- PAYMENT -->
+            <div class="member-block">
+              <p class="member-block-label">Payment method</p>
+              <p class="member-block-sub">How would you like to pay?</p>
+
+              <div class="pay-card">
+                <input type="hidden" name="payment_method" value="Bank transfer" />
+                <div class="pay-card-head">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M3 10 12 4l9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18" stroke="#033069"
+                      stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <h3>Bank transfer</h3>
+                  <span class="pay-card-label">Payment details provided below</span>
+                </div>
+
+                <dl class="pay-details">
+                  <div><dt>Account holder</dt><dd>NATIONAL SICKLE CELL ASSOCIATION</dd></div>
+                  <div><dt>Bank</dt><dd>Handelsbanken</dd></div>
+                  <div><dt>Clearing &amp; Account number</dt><dd>6921 / 852 077 688</dd></div>
+                  <div><dt>BIC / IBAN</dt><dd>HANDSESS / SE89 6000 0000 0008 5207 7688</dd></div>
+                  <div><dt>Account type</dt><dd>Affärskonto (Business Account)</dd></div>
+                  <div><dt>Currency</dt><dd>SEK</dd></div>
+                  <div><dt>Bankgiro number</dt><dd>5293-7083</dd></div>
+                  <div><dt>Branch office</dt><dd>6921 Kista</dd></div>
+                </dl>
+
+                <p class="pay-note">Please use your full name as the payment reference so we can match your
+                  payment.<br /><em>Membership is confirmed by email once payment is received.</em></p>
+              </div>
+            </div>
+
+            <!-- CONSENT -->
+            <div class="member-block member-consent">
+              <p class="member-block-label">Data &amp; consent</p>
+
+              <label class="m-check" for="consentData">
+                <input type="checkbox" id="consentData" name="consent_data" value="Agreed" required />
+                <span>I agree to NSCA Sweden storing my name and email address for the sole purpose of administering
+                  my membership. My data will not be shared with third parties. I can request deletion at any time by
+                  emailing <a href="mailto:NSCA.Sweden@gmail.com">NSCA.Sweden@gmail.com</a>. <b
+                    class="req">*</b></span>
+              </label>
+
+              <label class="m-check" for="consentNewsletter">
+                <input type="checkbox" id="consentNewsletter" name="consent_newsletter" value="Yes" />
+                <span>I would like to receive NSCA Sweden’s annual newsletter by email. (Optional — you can
+                  unsubscribe at any time.)</span>
+              </label>
+            </div>
+
+            <!-- SUMMARY + SUBMIT -->
+            <div class="member-summary" aria-live="polite">
+              <div>
+                <span class="member-summary-label">Selected tier</span>
+                <strong id="summaryTier">Please select a tier above</strong>
+              </div>
+              <div class="member-summary-fee">
+                <span class="member-summary-label">Annual fee</span>
+                <strong id="summaryFee">—</strong>
+              </div>
+            </div>
+
+            <p class="member-hint" id="membershipHint">Select a tier and tick the data consent box to continue.</p>
+            <button class="btn-pill-red member-submit" id="membershipSubmit" type="submit" disabled>
+              Submit my membership application
+              <img src="assets/arrow-white.svg" alt="" width="13" height="11" />
+            </button>
+            <p class="member-status" id="membershipStatus" role="status" aria-live="polite"></p>
+          </section>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- THANK YOU POPUP -->
+  <div class="member-modal" id="memberModal" role="dialog" aria-modal="true" aria-labelledby="memberModalTitle" hidden>
+    <div class="member-modal-backdrop" data-modal-close></div>
+    <div class="member-modal-box" tabindex="-1">
+      <button class="member-modal-x" type="button" data-modal-close aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="m3 3 10 10M13 3 3 13" stroke="#033069" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <span class="member-modal-icon" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+          <path d="m5 12.5 4.5 4.5L19 7.5" stroke="#fff" stroke-width="2.6" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </span>
+      <p class="member-modal-eyebrow">APPLICATION SUBMITTED</p>
+      <h2 id="memberModalTitle">Welcome to NSCA Sweden!</h2>
+      <p class="member-modal-lead">Thank you, <strong id="mmName">member</strong>. Your application for
+        <strong><span id="mmTier">Individual</span> Membership</strong> has been registered successfully!</p>
+
+      <div class="member-modal-card">
+        <h3>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 10 12 4l9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18" stroke="#033069" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          Instructions to complete membership
+        </h3>
+        <p>To activate your membership, please transfer your membership fee of <strong id="mmFee">SEK 200</strong>
+          via bank transfer:</p>
+
+        <dl class="pay-details">
+          <div><dt>Account holder</dt><dd>NATIONAL SICKLE CELL ASSOCIATION</dd></div>
+          <div><dt>Bank</dt><dd>Handelsbanken</dd></div>
+          <div><dt>Clearing &amp; Account number</dt><dd>6921 / 852 077 688</dd></div>
+          <div><dt>BIC / IBAN</dt><dd>HANDSESS / SE89 6000 0000 0008 5207 7688</dd></div>
+          <div><dt>Account type</dt><dd>Affärskonto (Business Account)</dd></div>
+          <div><dt>Currency</dt><dd>SEK</dd></div>
+          <div><dt>Bankgiro number</dt><dd>5293-7083</dd></div>
+          <div><dt>Branch office</dt><dd>6921 Kista</dd></div>
+        </dl>
+
+        <p class="member-modal-ref">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3 2.5 20h19L12 3Z" fill="#ffc10f" stroke="#8b6804" stroke-width="1.6"
+              stroke-linejoin="round" />
+            <path d="M12 10v4.5M12 17.2v.1" stroke="#2a2600" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <span>Payment reference: use your full name (<strong id="mmRef">your name</strong>)</span>
+        </p>
+      </div>
+
+      <p class="member-modal-note">Membership is confirmed by email once payment is received. A digital founding
+        member certificate will be sent to your email: <strong id="mmEmail">your email</strong>.</p>
+
+      <div class="member-modal-actions">
+        <a class="btn-pill-red" href="index.html">Return to Homepage</a>
+        <button class="btn-outline-navy" type="button" data-modal-close>Submit Another Form</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="contact" id="contact">
+    <div class="container-nsca">
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow eyebrow-yellow">GET IN TOUCH</p>
+          <h2>Write to us. A real person reads it.</h2>
+          <p class="intro">Tell us who you are and how we can help. We keep your message private and only use it to
+            reply.</p>
+          <p class="details">
+            nscasweden.se<br />
+            Instagram @nscasweden<br />
+            nsca.sweden@gmail.com
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <input type="hidden" name="access_key" value="e3b05d65-c42a-44a4-8c86-0a41c45560fa">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-field full">
+            <label for="role">I’m a...</label>
+            <select id="role" name="role">
+              <option>Teenager or young adult living with sickle cell</option>
+              <option>Adult living with sickle cell</option>
+              <option>Parent or carer</option>
+              <option>Family member or friend</option>
+              <option>Healthcare professional</option>
+              <option>Organisation / partner</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label for="message">How we can help?</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <div class="form-submit">
+            <button class="btn-yellow" type="submit">
+              Send message
+              <img src="assets/arrow-dark.svg" alt="" width="14" height="12" />
+            </button>
+          </div>
+          <input type="hidden" name="subject" value="New message from NSCA Sweden website">
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
+        </form>
+      </div>
+
+      <div class="footer-partners">
+        <div class="partners-left">
+          <p class="partners-label">In partnership with</p>
+          <a class="partner-badge" href="#" aria-label="Vertex">
+            <img src="assets/partner-vertex.svg" alt="Vertex" width="96" height="59" />
+          </a>
+          <a class="partner-badge" href="#" aria-label="NIDO Sweden">
+            <img src="assets/partner-nido.svg" alt="NIDO Sweden" width="120" height="62" />
+          </a>
+        </div>
+        <a class="partner-link" href="get-involved.html#partner">How we work with partners</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 NSCA Sweden National Sickle Cell Association Sweden</p>
+        <p>Privacy · Accessibility · Svenska</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
